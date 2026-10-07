@@ -9,8 +9,9 @@ This project contains three C programs that solve separate practical problems. E
 - q1.png
 - q2.png
 - q3.png
+- q4.png
 
-The screenshot files (q1.png, q2.png, and q3.png) are included as proof of the working output for each question.
+The screenshot files (q1.png, q2.png, q3.png, and q4.png) are included as proof of the working output for each question.
 
 ---
 
@@ -111,6 +112,22 @@ Limitation:
 
 ### Proof image
 The proof image for this question is saved as `q3.png`.
+
+---
+
+## Question 4: Car Parking Sensor Alert System
+
+### Role of Components
+The Ultrasonic sensor measures how far away a car is by bouncing sound waves off it. The Arduino Uno is the brain that runs the code to do the math and make decisions. The LEDs and Buzzer are actuators that give the user visual and audio feedback.
+
+### Processing Data
+The Arduino triggers a pulse on the `trigPin`, counts how long it takes to return on the `echoPin`, and divides by the speed of sound to get the distance in centimeters.
+
+### Controlling Outputs
+It compares the calculated distance to a hardcoded threshold of 50cm. If the distance is smaller, it writes a HIGH voltage to the Red LED and Buzzer pins, and LOW to the Green LED. If the distance is larger, it flips them.
+
+### Proof image
+The proof image for this question is saved as `q4.png`.
 
 ---
 
